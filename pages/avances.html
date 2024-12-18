@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Avances</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body class="flex flex-col h-screen">
+    <header class="flex justify-between pl-10 pr-10 pt-5 items-center">
+      <a href="../index.html" class="flex items-center gap-4">
+        <h1 class="text-2xl">TomActive</h1>
+      </a>
+      <ul class="flex items-right gap-5">
+        <li class="text-[#18a0fb]">
+          <a href="./ejercicios.html">Ejercicios</a>
+        </li>
+        <li class="text-[#18a0fb]">
+          <a href="./dieta.html">Dieta</a>
+        </li>
+        <li class="text-[#18a0fb]">
+          <a href="./avances.html">Avances</a>
+        </li>
+        <li class="text-[#18a0fb]">
+          <a href="./nosotros.html">Nosotros</a>
+        </li>
+      </ul>
+    </header>
+    <main class="flex-grow grid gap-7 p-24">
+      <table
+        id="tabla-ejercicios"
+        class="table-auto border-collapse border border-gray-300 w-full text-sm h-screen"
+      >
+        <thead class="bg-gray-200 h-3">
+          <tr>
+            <th class="border border-gray-400 px-4 py-2">Semana</th>
+            <th class="border border-gray-400 px-4 py-2">
+              Nombre del Ejercicio
+            </th>
+            <th class="border border-gray-400 px-4 py-2">¿Logré hacerlo?</th>
+            <th class="border border-gray-400 px-4 py-2">
+              ¿Hubo alguna complicación?
+            </th>
+            <th class="border border-gray-400 px-4 py-2">¿Cuál fue?</th>
+            <th class="border border-gray-400 px-4 py-2">
+              Nivel de dificultad (1-10)
+            </th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+
+    <footer class="flex justify-between p-8">
+      <h1>TomActive</h1>
+      <ul class="flex gap-5">
+        <li>Ejercicios Sencillos</li>
+        <li>Planificacion Semanal</li>
+        <li>Mejorias Aseguradas</li>
+      </ul>
+      <span>© 2024 TomActive</span>
+    </footer>
+    <script src="../scripts/loadElements.js"></script>
+  </body>
+</html>

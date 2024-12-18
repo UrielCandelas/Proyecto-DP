@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Brazos</title>
+    <link rel="stylesheet" href="../../styles/index.css" />
+  </head>
+  <body class="flex flex-col h-screen">
+    <header class="flex justify-between pl-10 pr-10 pt-5 items-center">
+      <a href="../../index.html" class="flex items-center gap-4">
+        <h1 class="text-2xl">TomActive</h1>
+      </a>
+      <ul class="flex items-right gap-5">
+        <li class="text-[#18a0fb]">
+          <a href="../ejercicios.html">Ejercicios</a>
+        </li>
+        <li class="text-[#18a0fb]">
+          <a href="../dieta.html">Dieta</a>
+        </li>
+        <li class="text-[#18a0fb]">
+          <a href="../avances.html">Avances</a>
+        </li>
+        <li class="text-[#18a0fb]">
+          <a href="../nosotros.html">Nosotros</a>
+        </li>
+      </ul>
+    </header>
+    <main class="flex-grow p-10">
+      <section class="flex flex-col items-center justify-center gap-5">
+        <h1 class="text-2xl">Ejercicios para brazos</h1>
+        <h2 class="text-lg">Descripción</h2>
+      </section>
+      <div class="grid grid-cols-2 mt-5 gap-5">
+        <section class="">
+          <div>
+            <h2 class="font-bold">Objetivo del Ejercicio</h2>
+            <p>
+              El objetivo del ejercicio de brazos es fortalecer los músculos del
+              bíceps, tríceps y antebrazos, mejorando la fuerza, la resistencia
+              y la definición muscular. Ejercicios como curls, fondos de tríceps
+              y levantamientos con mancuernas son ideales para trabajar estas
+              áreas. Mantén una técnica adecuada durante cada movimiento,
+              evitando balancear el cuerpo o forzar las articulaciones. Comienza
+              con un peso adecuado a tu nivel y aumenta progresivamente la
+              resistencia. Recuerda calentar antes de iniciar y estirar al
+              finalizar para prevenir lesiones y maximizar los resultados.
+            </p>
+          </div>
+          <div class="font-bold mt-5">Autoevaluacion</div>
+          <form class="flex flex-col gap-5 mt-5" id="dataBrazos">
+            <div class="flex justify-between">
+              <p class="w-1/2">¿Pude realizar el ejercicio?</p>
+              <label class="flex justify-between w-1/2">
+                <label>
+                  <input type="radio" name="exercise" value="yes" />
+                  <span>Si</span>
+                </label>
+                <label>
+                  <input type="radio" name="exercise" value="no" />
+                  <span>No</span>
+                </label>
+              </label>
+            </div>
+            <div class="flex justify-between">
+              <p class="w-1/2">¿Tuve alguna complicacion?</p>
+              <label class="flex justify-between w-1/2">
+                <label>
+                  <input type="radio" name="complication" value="yes" />
+                  <span>Si</span>
+                </label>
+                <label>
+                  <input type="radio" name="complication" value="no" />
+                  <span>No</span>
+                </label>
+              </label>
+            </div>
+            <div class="flex justify-between">
+              <p class="w-1/2">En caso de tener alguna ¿Cual fue?</p>
+              <input
+                type="text"
+                class="w-1/2 border border-black pl-2"
+                id="complicationDescription"
+              />
+            </div>
+            <div class="flex justify-between">
+              <p class="text-sm w-1/2">
+                ¿Cual es el nivel de dificultad del ejercicio? (1-10)
+              </p>
+              <input
+                type="number"
+                class="w-1/2 border border-black pl-2"
+                id="difficulty"
+              />
+            </div>
+            <div class="flex justify-center">
+              <input
+                type="submit"
+                value="Registrar Datos"
+                class="custom-blue border-2 px-3 py-2 rounded text-sm hover:bg-[#FFFF] hover:text-[#18a0fb]"
+              />
+            </div>
+          </form>
+        </section>
+        <section>
+          <video src="../../videos/video de Brazos.mp4" controls></video>
+        </section>
+      </div>
+    </main>
+    <footer class="flex justify-between p-8">
+      <h1>TomActive</h1>
+      <ul class="flex gap-5">
+        <li>Ejercicios Sencillos</li>
+        <li>Planificacion Semanal</li>
+        <li>Mejorias Aseguradas</li>
+      </ul>
+      <span>© 2024 TomActive</span>
+    </footer>
+    <script src="../../scripts/main.js"></script>
+  </body>
+</html>
